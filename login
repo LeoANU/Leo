@@ -8,18 +8,19 @@
 </head>
 <body>
 	<center>
+		<a href="adminlogin.jsp">admin</a>
+		<br>
 		<h1 style="color:red">Sign in</h1>
-		
-		
-		<form action="check.jsp" method="get">
+
+		<form action="check.jsp" method="post">
 		<table border="0">
 		<tr>
-			<td>Username:</td>
-			<td><input type="text" name="username"></td>
+			<td>Username(or email):</td>
+			<td><input type="text" name="username" style="width:200px" value="within 30 chars" maxlength="30" onfocus="if(this.value == 'within 30 chars') this.value =''"></td>
 		</tr>
 		<tr>
 			<td>Password:</td>
-			<td><input type="password" name="password"></td>
+			<td><input type="password" name="password" style="width:200px" maxlength="16"></td>
 		</tr>
 
 		</table>
@@ -29,6 +30,8 @@
 		</form>
 			
 	</center>
+
+
 
 </body>
 </html>
