@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>homepage for administrator</title>
+</head>
+<body>
+Hi administrator
+
+<center>
+		<h1 style="color:red">Candidate</h1>
+		<table border="2">
+		<tr>
+		<td>Name</td>
+		<td>Email</td>
+		</tr>
+		</table>
+</center>
+<a href="interview.jsp">add interview</a> 
+<center>
+		<br>
+		<br>
+		<h1 style="color:red">interview</h1>
+		<table border="2">
+		<tr>
+		<td>Interviewer</td>
+		<td>Candidate</td>
+		<td>Time</td>
+		</tr>
+		</table>
+</center>
+<a href="candidate.jsp">add candidate</a> 
+</body>
+</html>
