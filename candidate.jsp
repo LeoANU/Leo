@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>candidate</title>
+</head>
+<body>
+<center>
+		<h1 style="color:red">Add candidate</h1>
+		
+		<form action="addcandidate.jsp" method="post">
+		<table border="0">
+		<tr>
+		<td>Name:</td>
+		<td><input type="text" name="name" style="width:230px"  maxlength="30" ></td>
+		</tr>
+		<tr>
+		<td>Email:</td>
+		<td><input type="text" name="email" style="width:230px" maxlength="30" ></td>
+		</tr>
+		
+		</table>
+			<input type="submit" value="add">
+		</form>
+
+</center>
+</body>
+</html>
