@@ -7,6 +7,10 @@
 <title>homepage</title>
 </head>
 <body>
-Hi
+Hi user
+
+
+<a href="CandidateServlet2">check candidate</a>
+
 </body>
 </html>

@@ -10,17 +10,10 @@
 <body>
 Hi administrator
 
-<center>
-		<h1 style="color:red">Candidate</h1>
-		<table border="2">
-		<tr>
-		<td>Name</td>
-		<td>Email</td>
-		</tr>
-		</table>
-</center>
+
+<a href="upload.jsp">add candidate</a>
 <a href="CandidateServlet">check candidate</a>
-<a href="candidate.jsp">add candidate</a> 
+ 
 <a href="InterviewServlet">check interview</a>
 <a href="interview.jsp">add interview</a>
 </body>

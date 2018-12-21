@@ -27,9 +27,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/InterviewServlet")
+@WebServlet("/CandidateServlet2")
 @MultipartConfig
-public class InterviewServlet extends HttpServlet{
+public class CandidateServlet2 extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 	
 	private static String jdbcDriver = "com.mysql.jdbc.Driver";
@@ -64,12 +64,6 @@ public class InterviewServlet extends HttpServlet{
 
 	}
 
-
-
-	
-
-	
-
 	
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) //
@@ -85,15 +79,15 @@ public class InterviewServlet extends HttpServlet{
 			
 			
 
-			 String sql="SELECT * from interview";
+			 String sql="SELECT * from candidate";
 			 ResultSet rs=st.executeQuery(sql);
 			 while(rs.next()){
-				 String interviewer=rs.getString(1);
-				 String candidate=rs.getString(2);
-				 String time=rs.getString(3);
-				 list.add(interviewer);
+				 String candidate=rs.getString(1);
+				 String email=rs.getString(2);
+				 String resume=rs.getString(3);
 				 list.add(candidate);
-				 list.add(time);
+				 list.add(email);
+				 list.add(resume);
 				 
 			 }
 
@@ -102,11 +96,11 @@ public class InterviewServlet extends HttpServlet{
 			e.printStackTrace();
 
 		}
-	
+		System.out.println(list);
 		request.setAttribute("mylist",list);
 
 
-		request.getRequestDispatcher("/checkinterview.jsp").forward(request, response);
+		request.getRequestDispatcher("/checkcandidate2.jsp").forward(request, response);
 
 
 

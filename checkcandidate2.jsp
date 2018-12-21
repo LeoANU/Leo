@@ -29,7 +29,7 @@
 			<%}
 			else{ %>
 			<td><a href="upload/${my}">${my}</a></td>
-			<td><a href="delete.jsp?fname=${my}">delete</a></td>
+			
 			</tr>
 			<%}  
 			i++;%>
@@ -37,7 +37,7 @@
 		 </table>
 </center>
 
-<a href="Home2.jsp">back</a>
-
+<a href="Home.jsp">back</a>
+ 
 </body>
 </html>

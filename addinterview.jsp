@@ -21,7 +21,7 @@ Statement stmt=conn.createStatement();
 String sql="insert into interview(interviewer,candidate,time) values('"+interviewer+"','"+candidate+"','"+time+"')";
 stmt.executeUpdate(sql);
 %>
-<jsp:forward page="Home2.jsp"></jsp:forward>
+<jsp:forward page="InterviewServlet"></jsp:forward>
 <% 
 stmt.close();
 conn.close();
