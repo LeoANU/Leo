@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<center>
+		<h1 style="color:red">Add interview</h1>
+		
+		<form action="request2.jsp" method="post">
+		<table border="0">
+		<tr>
+		<td>Interviewer:</td>
+		<td>jerry<input type="checkbox" name="color"  value="jerry"/>
+		mia<input type="checkbox" name="color"  value="mia"/>
+		leo<input type="checkbox" name="color"  value="leo"/></td>
+		</tr>
+		<tr>
+		<td>Candidate:</td>
+		<td><input type="text" name="candidate" style="width:230px" maxlength="30" ></td>
+		</tr>
+		<tr>
+		<td>Time:</td>
+		<td><input type="text" name="time" style="width:230px" value="in the form yyyy-MM-dd HH:mm" maxlength="30" onfocus="if(this.value == 'in the form yyyy-MM-dd HH:mm') this.value =''"></td>
+		</tr>		
+		</table>
+			<input type="submit" value="add">
+		</form>
+
+</center>
+</body>
+</html>
